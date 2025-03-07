@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant 3D Wedding</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <p>Loading your magical moment...</p>
+    </div>
+
+    <nav>
+        <div class="nav-content">
+            <a href="#home">Home</a>
+            <a href="#story">Our Story</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#rsvp">RSVP</a>
+        </div>
+    </nav>
+
+    <div id="canvas-container"></div>
+
+    <div class="content">
+        <section id="home" class="section">
+            <h1>Sarah & John</h1>
+            <p class="date">December 30, 2024</p>
+            <button class="music-toggle">♪ Toggle Music</button>
+        </section>
+
+        <section id="story" class="section">
+            <h2>Our Story</h2>
+            <div class="story-content">
+                <p>A beautiful journey that started with a chance meeting...</p>
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
+            <h2>Gallery</h2>
+            <div class="gallery-grid"></div>
+        </section>
+
+        <section id="rsvp" class="section">
+            <h2>RSVP</h2>
+            <form id="rsvp-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <select required>
+                    <option value="">Will you attend?</option>
+                    <option value="yes">Yes, I'll be there!</option>
+                    <option value="no">Sorry, I can't make it</option>
+                </select>
+                <button type="submit">Send RSVP</button>
+            </form>
+        </section>
+    </div>
+
+    <audio id="background-music" loop>
+        <source src="assets/audio/wedding-music.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="main.js"></script>
+</body>
+</html>
